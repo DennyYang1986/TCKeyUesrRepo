@@ -1,0 +1,49 @@
+managed implementation in class ZBP_R_TCEDI_SALES_HDR unique;
+strict ( 2 );
+with draft;
+
+define behavior for ZR_TCEDI_SALES_HDR
+persistent table ztcedi_sales_hdr
+draft table ZTCEDI_SALES_HDD
+etag master LocalLastChanged
+lock master total etag LastChangedAt
+authorization master( global )
+
+{
+  field ( mandatory : create )
+   Salesdocument;
+
+  field ( readonly )
+   CreatedAt,
+   CreatedBy,
+   LastChangedAt,
+   LastChangedBy,
+   LocalLastChanged;
+
+  field ( readonly : update )
+   Salesdocument;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZTCEDI_SALES_HDR
+  {
+    Salesdocument = salesdocument;
+    Issynced = issynced;
+    Tmvisibility = tmvisibility;
+    GvsworkspaceID = gvsworkspaceid;
+    CreatedAt = created_at;
+    CreatedBy = created_by;
+    LastChangedAt = last_changed_at;
+    LastChangedBy = last_changed_by;
+    LocalLastChanged = local_last_changed;
+  }
+}

@@ -1,0 +1,62 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'ZC_TCEDI_SALES_HDR', 
+    typeNamePlural: 'ZC_TCEDI_SALES_HDRs'
+  }
+}
+annotate view ZC_TCEDI_SALES_HDR with
+{
+  @UI.facet: [ {
+    id: 'idIdentification', 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'ZC_TCEDI_SALES_HDR', 
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    importance: #MEDIUM, 
+    label: 'Salesdocument'
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'Salesdocument'
+  } ]
+  Salesdocument;
+  
+  @UI.lineItem: [ {
+    position: 20 , 
+    importance: #MEDIUM, 
+    label: 'Issynced'
+  } ]
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Issynced'
+  } ]
+  Issynced;
+  
+  @UI.lineItem: [ {
+    position: 30 , 
+    importance: #MEDIUM, 
+    label: 'Tmvisibility'
+  } ]
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Tmvisibility'
+  } ]
+  Tmvisibility;
+  
+  @UI.lineItem: [ {
+    position: 40 , 
+    importance: #MEDIUM, 
+    label: 'GvsworkspaceID'
+  } ]
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'GvsworkspaceID'
+  } ]
+  GvsworkspaceID;
+  
+  @UI.hidden: true
+  LocalLastChanged;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ZC_TCEDI_SALES_HDR'
+define service ZUI_TCEDI_SALES_HDR_O4 {
+  expose ZC_TCEDI_SALES_HDR;
+}

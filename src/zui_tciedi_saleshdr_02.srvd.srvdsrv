@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ZTCIEDI_SALESHDR'
+define service ZUI_TCIEDI_SALESHDR_02 {
+  expose ZTCIEDI_SALESHDR;
+}

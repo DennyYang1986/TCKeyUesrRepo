@@ -1,0 +1,9 @@
+@EndUserText.label: 'Access control for ZTCA_SALESORDER'
+@MappingRole: true
+define role ZTCA_SALESORDER {
+    grant
+        select
+            on
+                ZTCA_SALESORDER;
+                       
+}

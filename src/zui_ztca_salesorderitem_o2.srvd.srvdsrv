@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ZTCIEDI_SALESHDRITEM'
+define service ZUI_ZTCA_SalesOrderItem_O2 {
+  expose ZTCA_SalesOrder;
+}
