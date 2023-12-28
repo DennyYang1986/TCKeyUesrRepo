@@ -1,0 +1,73 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "YYS4076040TC_REV",
+    "originalLanguage": "en"
+  },
+  "externalName": "YYS4076040TC_REV",
+  "type": "text",
+  "typeDetails": {
+    "length": 2
+  },
+  "uiTexts": [
+    {
+      "language": "en",
+      "componentKind": "main",
+      "componentIdentifier": "",
+      "fieldLabel": "TC Revision",
+      "fieldTooltip": "TC Revision",
+      "fieldHeading": "TC Revision"
+    }
+  ],
+  "extendedBusinessContexts": [
+    {
+      "businessContext": "SD_SALESDOC"
+    }
+  ],
+  "extendedCdsViews": [
+    {
+      "cdsViewName": "A_SALESCONTRACT",
+      "businessContext": "SD_SALESDOC"
+    },
+    {
+      "cdsViewName": "A_SALESORDER",
+      "businessContext": "SD_SALESDOC"
+    },
+    {
+      "cdsViewName": "A_SALESORDERSIMULATION",
+      "businessContext": "SD_SALESDOC"
+    },
+    {
+      "cdsViewName": "A_SALESQUOTATION",
+      "businessContext": "SD_SALESDOC"
+    },
+    {
+      "cdsViewName": "I_SALESDOCUMENT",
+      "businessContext": "SD_SALESDOC"
+    }
+  ],
+  "extendedOdataServices": [
+    {
+      "odataServiceKey": "API_SALES_CONTRACT_SRV 0001",
+      "businessContext": "SD_SALESDOC"
+    },
+    {
+      "odataServiceKey": "API_SALES_ORDER_SRV 0001",
+      "businessContext": "SD_SALESDOC"
+    },
+    {
+      "odataServiceKey": "API_SALES_ORDER_SIMULATION_SRV 0001",
+      "businessContext": "SD_SALESDOC"
+    },
+    {
+      "odataServiceKey": "API_SALES_QUOTATION_SRV 0001",
+      "businessContext": "SD_SALESDOC"
+    }
+  ],
+  "extendedDynproContexts": [
+    {
+      "dynproContext": "SD_SALESDOC_GUI",
+      "businessContext": "SD_SALESDOC"
+    }
+  ]
+}
